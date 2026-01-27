@@ -1,10 +1,11 @@
-#### Webscraper
+### Webscraper
 
-### Guide
-To host api: 
+## Guide
+# To host local api: 
 uvicorn API.api:app --reload
 POST: /scrape
-# Example_API: 
+
+Example_API: 
 Url: http://127.0.0.1:8000/scrape
 Body: 
 {
@@ -18,7 +19,7 @@ Body:
 }
 
 
-# Run locally
+# Run scrape locally without api
 Setup urls and elements to scrape in main.py
 python .\main.py
 
@@ -30,7 +31,7 @@ Storage
 API
 
 
-### Future work:
+## Future work:
 Keyword/Sentence Scrape
 Subscribe (repeat)
 Command Line args
