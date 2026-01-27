@@ -1,1 +1,6 @@
+# Storage output
 storage/
+
+# Python bytecode
+__pycache__/
+*.pyc
