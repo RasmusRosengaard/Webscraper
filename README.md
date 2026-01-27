@@ -3,6 +3,8 @@
 Implemented:
 Scrape multiple webpages
 Choose specific and multiple html-elements
+Terminal logging
+Storage
 
 
 Future work:
