@@ -25,7 +25,7 @@ class StorageHandler:
     def save_result(self, result) -> None:
         filepath = os.path.join(self.base_dir, self._make_filename(result.url))
 
-        final_text = "\n\n".join(
+        final_text = "\n".join(
             txt for _, txt in sorted(result.content.items()) if txt
         )
 

@@ -8,8 +8,10 @@ Storage
 
 
 Future work:
+Keyword/Sentence Scrape
+Subscribe (repeat)
 API
 Command Line args
-Subscribe (repeat)
+Script to remove duplicate sentences
 
 

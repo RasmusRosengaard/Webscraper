@@ -9,5 +9,5 @@ urls = [
     "https://nyheder.tv2.dk/samfund/2026-01-27-hun-deler-et-opraab-fra-hospitalet-efter-tab-og-overlaege-bakker-hende-op",
 ]
 
-for result in core.Scrape(urls, elements=["h1"]):
+for result in core.Scrape(urls):
     storage.save_result(result)
