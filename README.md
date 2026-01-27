@@ -1,8 +1,8 @@
 # Webscraper
 
 Implemented:
-Scrape mulitple webpages
-Choose specific and mulitple html-elements
+Scrape multiple webpages
+Choose specific and multiple html-elements
 
 
 Future work:
