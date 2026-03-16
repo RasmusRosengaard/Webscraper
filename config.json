@@ -1,0 +1,7 @@
+{
+    "domains": [
+        "https://www.dr.dk/",
+        "https://nyheder.tv2.dk/"
+    ],
+    "wanted-elements": ["p", "h1"]
+}

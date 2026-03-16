@@ -1,17 +1,20 @@
 import asyncio
+import json
 from Scraper.ScraperCore import ScraperCore
 from StorageHandler import StorageHandler
 
 async def main():
+    # Load configuration from JSON
+    with open("config.json", "r", encoding="utf-8") as f:
+        config = json.load(f)
+
+    urls = config.get("domains", [])
+    elements = config.get("wanted-elements", None)
+
     core = ScraperCore()
     storage = StorageHandler()
 
-    urls = [
-        "https://www.dr.dk/presse/dr-k-hele-danmarks-nye-kulturkanal-0",
-        "https://nyheder.tv2.dk/samfund/2026-01-27-hun-deler-et-opraab-fra-hospitalet-efter-tab-og-overlaege-bakker-hende-op",
-    ]
-
-    async for result in core.Scrape(urls, elements=["h1"]):
+    async for result in core.CrawlAndScrape(urls, elements=elements):
         storage.save_result(result)
 
 if __name__ == "__main__":

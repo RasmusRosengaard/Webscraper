@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  scraper:
+    build: .
+    volumes:
+      - /c/Users/rasmu/OneDrive/Skrivebord/data:/app/output
+    environment:
+      - OUTPUT_DIR=/app/output
+    command: python main.py
